@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column{
+    flex-grow: 1;
+    width: 50%;
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form input{
+    display: block;
+    
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #000000;
+    margin-top: 15px;
+    padding: 10px;
+    width: 320px;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder{
+    color: #000000;
+}
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label{
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    margin-left: 0;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    width: 320px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #1d44b8;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+}
+
+.infobox{
+    width: 320px;
+    margin-top: 20px;
+}
+
+.infobox p{
+    font-weight: bold;
+}
+
+.infobox p a{
+    text-decoration: none;
+    color: #8f8f8f;
+    user-select: none;
+}
+
+.right{
+    background-color: #007fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo{
+    height: 250px;
+    width: 400px;
+    margin-top: -30px;
+}
+
+.chamada h1{
+    padding-top: 30px;
+    color: #ffffff;
+    margin-left: 18%;
+}
+
+
+.chamada p{
+    margin-left: 18%;
+    margin-top: 15px;
+    color: #ffffff;
+    font-size: 13px;
+    width: 350px;
+}
+
+@media(max-width: 830px){
+.container{
+    flex-direction: column;
+    height: 100%;
+}
+
+.right{
+    width: 100%;
+    height: 700px;
+}
+
+.left{
+    margin-bottom: 30px;
+}
+
+.logo{
+    width: 320px;
+    margin-top: 20px;
+}
+
+.chamada h1{
+    align-items: center;
+    max-width: 350px;
+}
+
+.chamada p{
+    max-width: 250px;
+    margin-bottom: 30px;
+}
+}
+
+
